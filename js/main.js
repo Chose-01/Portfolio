@@ -24,6 +24,28 @@
   /* ---------- Année du pied de page ---------- */
   $$("#annee").forEach((el) => (el.textContent = new Date().getFullYear()));
 
+  /* ---------- Mode clair / sombre ---------- */
+  const themeBouton = $("#theme-bouton");
+  const majTheme = (sombre) => {
+    if (sombre) {
+      document.documentElement.dataset.theme = "sombre";
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+    if (themeBouton) {
+      themeBouton.setAttribute("aria-label", sombre ? "Activer le mode clair" : "Activer le mode sombre");
+      themeBouton.setAttribute("aria-pressed", String(sombre));
+    }
+  };
+  majTheme(document.documentElement.dataset.theme === "sombre");
+  if (themeBouton) {
+    themeBouton.addEventListener("click", () => {
+      const sombre = document.documentElement.dataset.theme !== "sombre";
+      majTheme(sombre);
+      try { localStorage.setItem("theme", sombre ? "sombre" : "clair"); } catch (e) {}
+    });
+  }
+
   /* ---------- En-tête : ombre au défilement + menu mobile ---------- */
   const entete = $("#entete");
   const surDefilement = () => entete && entete.classList.toggle("defile", window.scrollY > 10);

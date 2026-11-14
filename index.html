@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+  <script>try{if(localStorage.getItem("theme")==="sombre")document.documentElement.dataset.theme="sombre";}catch(e){}</script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,18 +26,24 @@
       <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
         <span class="logo-halo" aria-hidden="true"></span><span>Xavier Trudel</span>
       </a>
-      <button class="nav-bouton" aria-expanded="false" aria-controls="nav-liens" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-liens" id="nav-liens">
-        <li><a href="#presentation">Présentation</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#connaissances">Connaissances</a></li>
-        <li><a href="#scolarite">Scolarité</a></li>
-        <li><a href="#formations">Formations</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-droite">
+        <ul class="nav-liens" id="nav-liens">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#connaissances">Connaissances</a></li>
+          <li><a href="#scolarite">Scolarité</a></li>
+          <li><a href="#formations">Formations</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-bouton" id="theme-bouton" type="button" aria-label="Activer le mode sombre" title="Basculer le mode clair / sombre">
+          <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        </button>
+        <button class="nav-bouton" aria-expanded="false" aria-controls="nav-liens" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 

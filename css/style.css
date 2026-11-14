@@ -78,6 +78,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
 .entete.defile { border-bottom-color: var(--bordure); box-shadow: 0 6px 30px -18px rgba(120, 100, 50, .35); }
 .nav { max-width: var(--max); height: 100%; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav-droite { display: flex; align-items: center; gap: 8px; }
 .logo { display: inline-flex; align-items: center; gap: .65em; font-family: var(--serif); font-size: 1.45rem; font-weight: 700; color: var(--encre); text-decoration: none; letter-spacing: .02em; }
 .logo:hover { color: var(--encre); }
 .logo-halo { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--or-clair); box-shadow: 0 0 12px 2px rgba(230, 207, 147, .8), inset 0 0 6px rgba(230, 207, 147, .7); }
@@ -86,6 +87,12 @@ p { margin: 0 0 1em; }
 .nav-liens a:hover, .nav-liens a.actif, .nav-liens a[aria-current="page"] { color: var(--encre); background: var(--or-pale); }
 .nav-liens .nav-cta { background: var(--encre); color: #fff; margin-left: 6px; }
 .nav-liens .nav-cta:hover, .nav-liens .nav-cta.actif { background: var(--or); color: #fff; }
+.theme-bouton { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--bordure); background: rgba(255, 255, 255, .75); color: var(--encre); display: inline-grid; place-items: center; cursor: pointer; transition: transform .25s, background .25s, border-color .25s, color .25s; }
+.theme-bouton:hover { transform: translateY(-1px); border-color: var(--or-clair); color: var(--or); }
+.theme-bouton svg { width: 19px; height: 19px; }
+.theme-bouton .icone-soleil { display: none; }
+:root[data-theme="sombre"] .theme-bouton .icone-lune { display: none; }
+:root[data-theme="sombre"] .theme-bouton .icone-soleil { display: block; }
 .nav-bouton { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
 .nav-bouton span { display: block; width: 24px; height: 2px; margin: 5px 0; background: var(--encre); border-radius: 2px; transition: transform .3s, opacity .3s; }
 .nav-bouton[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -309,6 +316,71 @@ p { margin: 0 0 1em; }
 /* ---------- Apparition ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .8, .2, 1); }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* ---------- Mode sombre (« nuit céleste ») ---------- */
+:root[data-theme="sombre"] {
+  --ivoire: #0c0e17;
+  --nacre: #151928;
+  --blanc: #181d2f;
+  --or: #e0b95b;
+  --or-clair: #caa246;
+  --or-pale: rgba(224, 185, 91, 0.16);
+  --ciel: #7eb8e2;
+  --ciel-pale: rgba(126, 184, 226, 0.14);
+  --encre: #f4efe4;
+  --texte: #cfd4e2;
+  --texte-doux: #969eb4;
+  --bordure: rgba(224, 185, 91, 0.22);
+  --ombre: 0 14px 40px -12px rgba(0, 0, 0, 0.65), 0 2px 10px -2px rgba(0, 0, 0, 0.45);
+  --ombre-forte: 0 24px 60px -16px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(224, 185, 91, 0.35);
+}
+:root[data-theme="sombre"] a:hover { color: #f3d483; }
+:root[data-theme="sombre"] .ciel {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(224, 185, 91, .16), transparent 70%),
+    linear-gradient(180deg, #090b12 0%, var(--ivoire) 45%, #101422 100%);
+}
+:root[data-theme="sombre"] .halo-1 { background: rgba(224, 185, 91, .22); }
+:root[data-theme="sombre"] .halo-2 { background: rgba(102, 162, 214, .18); }
+:root[data-theme="sombre"] .halo-3 { background: rgba(154, 118, 212, .16); }
+:root[data-theme="sombre"] .entete { background: rgba(12, 14, 23, .78); }
+:root[data-theme="sombre"] .nav-liens .nav-cta { background: var(--or); color: #12141d; }
+:root[data-theme="sombre"] .nav-liens .nav-cta:hover,
+:root[data-theme="sombre"] .nav-liens .nav-cta.actif { background: #f0cb70; color: #12141d; }
+:root[data-theme="sombre"] .theme-bouton,
+:root[data-theme="sombre"] .btn-ligne,
+:root[data-theme="sombre"] .filtre { background: rgba(24, 29, 47, .82); color: var(--encre); }
+:root[data-theme="sombre"] .btn-ligne:hover { background: #212840; color: var(--encre); }
+:root[data-theme="sombre"] .filtre.actif { background: var(--or); border-color: var(--or); color: #12141d; }
+:root[data-theme="sombre"] .btn-or { color: #12141d; }
+:root[data-theme="sombre"] .btn-or:hover { color: #12141d; }
+:root[data-theme="sombre"] .badge-or { color: #f3d483; }
+:root[data-theme="sombre"] .badge-ciel,
+:root[data-theme="sombre"] .etiquettes li { color: #a7d2f0; border-color: rgba(126, 184, 226, .28); }
+:root[data-theme="sombre"] .carte,
+:root[data-theme="sombre"] .projet-carte,
+:root[data-theme="sombre"] .realisation,
+:root[data-theme="sombre"] .galerie-item { background: rgba(21, 25, 40, .86); }
+:root[data-theme="sombre"] .projet-image::after { background: linear-gradient(180deg, transparent 55%, rgba(12, 14, 23, .55)); }
+:root[data-theme="sombre"] .aureole-centre {
+  background: radial-gradient(circle at 35% 30%, #252c44, #151928 65%, #2b2418);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, .75), inset 0 0 22px rgba(224, 185, 91, .22);
+}
+:root[data-theme="sombre"] .competence .icone { background: linear-gradient(135deg, rgba(224, 185, 91, .2), #181d2f); }
+:root[data-theme="sombre"] .pastilles li { background: #181d2f; color: var(--encre); }
+:root[data-theme="sombre"] .pastilles li:hover,
+:root[data-theme="sombre"] .pastilles li:focus-visible { background: var(--or-pale); }
+:root[data-theme="sombre"] .pastilles li::after,
+:root[data-theme="sombre"] .terme::after { background: #232942; color: var(--encre); border: 1px solid var(--bordure); }
+:root[data-theme="sombre"] .frise-point { background: #181d2f; }
+:root[data-theme="sombre"] .champ input,
+:root[data-theme="sombre"] .champ textarea { background: rgba(15, 18, 30, .9); color: var(--encre); }
+:root[data-theme="sombre"] .bloc-bref p { background: linear-gradient(135deg, #171c2d, rgba(126, 184, 226, .14)); border-color: rgba(126, 184, 226, .28); }
+:root[data-theme="sombre"] .visionneuse { background: rgba(10, 12, 20, .94); }
+:root[data-theme="sombre"] .visionneuse button { background: #181d2f; color: var(--encre); }
+@media (max-width: 860px) {
+  :root[data-theme="sombre"] .nav-liens { background: rgba(12, 14, 23, .97); }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
