@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavier Trudel · Portfolio · Développeur de jeux vidéo</title>
+  <meta name="description" content="Portfolio de Xavier Trudel, étudiant en Techniques de l'informatique passionné par la création de jeux vidéo : projets, compétences, connaissances, scolarité et contact.">
+  <meta property="og:title" content="Xavier Trudel · Portfolio">
+  <meta property="og:description" content="Étudiant en Techniques de l'informatique, passionné par la création de systèmes de jeu.">
+  <meta property="og:image" content="assets/img/shattered/monde.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="ciel" aria-hidden="true"><span class="halo halo-1"></span><span class="halo halo-2"></span><span class="halo halo-3"></span></div>
+  <div class="particules" aria-hidden="true"></div>
+
+  <header class="entete" id="entete">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="logo-halo" aria-hidden="true"></span><span>Xavier Trudel</span>
+      </a>
+      <button class="nav-bouton" aria-expanded="false" aria-controls="nav-liens" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-liens" id="nav-liens">
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#connaissances">Connaissances</a></li>
+        <li><a href="#scolarite">Scolarité</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <!-- ============ ACCUEIL ============ -->
+    <section class="hero" id="accueil">
+      <div class="hero-texte reveal">
+        <p class="surtitre">Portfolio · Techniques de l'informatique</p>
+        <h1>Xavier <em>Trudel</em></h1>
+        <p class="hero-role">Étudiant en informatique &amp; créateur de jeux vidéo</p>
+        <p class="hero-intro">
+          Étudiant en Techniques de l'informatique, passionné par la création de systèmes de jeu innovants et par tout ce qui touche la création de jeux vidéo. Voici mon portfolio : vous y verrez mes projets, mes compétences, mes formations ainsi que les façons de me contacter.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-or" href="#realisations">Voir mes réalisations</a>
+          <a class="btn btn-ligne" href="#contact">Me contacter</a>
+        </div>
+        <ul class="hero-liens" aria-label="Profils en ligne">
+          <li><a href="https://github.com/Chose-01" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-github"/></svg>GitHub</a></li>
+          <li><a href="https://chose-01.itch.io/vassal" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-jeu"/></svg>itch.io</a></li>
+          <li><a href="mailto:xaviertrud2006@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Courriel</a></li>
+        </ul>
+      </div>
+      <div class="hero-visuel reveal" aria-hidden="true">
+        <div class="aureole">
+          <span class="anneau anneau-1"></span>
+          <span class="anneau anneau-2"></span>
+          <span class="anneau anneau-3"></span>
+          <svg class="aile aile-g" viewBox="0 0 200 260"><use href="#i-aile"/></svg>
+          <svg class="aile aile-d" viewBox="0 0 200 260"><use href="#i-aile"/></svg>
+          <div class="aureole-centre">
+            <span class="aureole-initiales">XT</span>
+          </div>
+        </div>
+      </div>
+      <dl class="hero-chiffres reveal">
+        <div><dt>5</dt><dd>réalisations présentées</dd></div>
+        <div><dt>2027</dt><dd>fin du DEC</dd></div>
+        <div><dt>Unity · C#</dt><dd>spécialité</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ PRÉSENTATION ============ -->
+    <section class="section" id="presentation">
+      <header class="section-titre reveal">
+        <p class="surtitre">Qui suis-je ?</p>
+        <h2>Présentation</h2>
+      </header>
+      <div class="presentation reveal">
+        <div class="carte carte-lumiere">
+          <p class="lettrine">
+            Je m'appelle Xavier Trudel et je termine mon DEC en Techniques de l'informatique au Cégep de l'Abitibi-Témiscamingue, à Rouyn-Noranda. Mon parcours est une exploration de la complexité logicielle : spécialisé en Unity et en C#, j'utilise les systèmes de jeu pour créer des mondes immersifs.
+          </p>
+          <p>
+            Au fil de mes études, j'ai réalisé des jeux en Python, en C# avec Windows Forms et avec Unity, ainsi qu'un site web complet en PHP. J'aime particulièrement concevoir les « cerveaux » d'un jeu : intelligence artificielle, recherche de chemin, génération de mondes et systèmes qui interagissent entre eux. En parallèle, je travaille comme assistant technique en pharmacie, ce qui m'a appris la rigueur, la confidentialité et le service à la clientèle.
+          </p>
+          <p>
+            Mon objectif : poursuivre au baccalauréat en création de jeux vidéo à l'UQAT et devenir un créateur de jeux de pointe, alliant passion, technique et vision créative.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RÉALISATIONS ============ -->
+    <section class="section" id="realisations">
+      <header class="section-titre reveal">
+        <p class="surtitre">Le cœur du portfolio</p>
+        <h2>Réalisations</h2>
+        <p class="section-intro">Mes projets les plus pertinents, du plus récent au plus ancien. Cliquez sur un projet pour lire sa description détaillée : objectifs, réalisations, résultats et apprentissages.</p>
+      </header>
+      <div class="filtres reveal" role="group" aria-label="Filtrer les réalisations par étiquette"></div>
+      <ol class="projets" id="liste-projets" aria-live="polite"></ol>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="section" id="competences">
+      <header class="section-titre reveal">
+        <p class="surtitre">Savoir-être, acquis par l'expérience</p>
+        <h2>Compétences</h2>
+        <p class="section-intro">Des aptitudes développées au fil de mes projets et de mon emploi, chacune appuyée par un exemple concret.</p>
+      </header>
+      <div class="grille-competences">
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-etoile"/></svg>
+          <h3>Autonomie</h3>
+          <p>Je suis capable de mener un projet complet du début à la fin, sans supervision constante.</p>
+          <p class="exemple"><strong>Exemple :</strong> j'ai développé seul <a href="projet.html?id=vassal">Vassal</a>, <a href="projet.html?id=brio-microbrasserie">Brio Microbrasserie</a> et <a href="projet.html?id=shattered-realms">Shattered Realms</a>, de la planification jusqu'à la livraison.</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-equipe"/></svg>
+          <h3>Travail d'équipe</h3>
+          <p>Je sais diviser un projet en parties claires, me coordonner avec un coéquipier et assembler nos travaux.</p>
+          <p class="exemple"><strong>Exemple :</strong> pour <a href="projet.html?id=dungeon">Dungeon</a> (avec Zachary Gauthier) et <a href="projet.html?id=apocalypse">Apocalypse</a> (avec Noé Auger), nous nous sommes réparti les systèmes et les avons fusionnés avec Git.</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-calendrier"/></svg>
+          <h3>Planification et gestion de projet</h3>
+          <p>Je découpe un gros projet en étapes réalistes, avec des échéances et une estimation du temps.</p>
+          <p class="exemple"><strong>Exemple :</strong> l'échéancier en 7 phases de <a href="projet.html?id=shattered-realms">Shattered Realms</a> et la planification de <a href="projet.html?id=vassal">Vassal</a> (scénarios et schéma de classes avant de coder).</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ampoule"/></svg>
+          <h3>Résolution de problèmes</h3>
+          <p>Face à une limite technique, je cherche, je teste et je trouve une solution créative.</p>
+          <p class="exemple"><strong>Exemple :</strong> détourner Windows Forms, un outil prévu pour des logiciels de bureau, pour y faire tourner un jeu d'action complet dans <a href="projet.html?id=dungeon">Dungeon</a>.</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-bouclier"/></svg>
+          <h3>Rigueur et souci du détail</h3>
+          <p>Je travaille avec précision et je respecte les procédures, surtout quand une erreur peut avoir des conséquences.</p>
+          <p class="exemple"><strong>Exemple :</strong> comme assistant technique en pharmacie, chaque tâche demande exactitude et confidentialité ; en programmation, cela se traduit par la sécurité de <a href="projet.html?id=brio-microbrasserie">Brio</a> (2FA, rôles, hachage).</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-bulle"/></svg>
+          <h3>Communication et service à la clientèle</h3>
+          <p>J'explique clairement, j'écoute les besoins et je reste courtois, même dans les moments occupés.</p>
+          <p class="exemple"><strong>Exemple :</strong> mon emploi en pharmacie me met chaque jour en contact avec la clientèle et une équipe de professionnels de la santé.</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-livre"/></svg>
+          <h3>Apprentissage continu</h3>
+          <p>J'apprends rapidement de nouveaux outils par moi-même et je me tiens à jour.</p>
+          <p class="exemple"><strong>Exemple :</strong> la veille technologique de <a href="projet.html?id=shattered-realms">Shattered Realms</a> m'a fait découvrir Unity 6, la génération procédurale et le processus de publication sur Steam.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONNAISSANCES ============ -->
+    <section class="section" id="connaissances">
+      <header class="section-titre reveal">
+        <p class="surtitre">Savoirs techniques</p>
+        <h2>Connaissances</h2>
+        <p class="section-intro">Ce que je maîtrise grâce à ma formation : langages, outils et techniques. Survolez ou touchez un élément pour une explication simple.</p>
+      </header>
+      <div class="grille-connaissances">
+        <article class="carte connaissance reveal">
+          <h3>Langages de programmation</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Langage principal de Unity et de .NET. Utilisé dans Shattered Realms, Vassal et Dungeon.">C#</li>
+            <li tabindex="0" data-def="Langage simple et polyvalent. Utilisé pour le jeu Apocalypse.">Python</li>
+            <li tabindex="0" data-def="Langage côté serveur pour créer des sites dynamiques. Utilisé pour Brio Microbrasserie.">PHP</li>
+            <li tabindex="0" data-def="Langage pour interroger et modifier une base de données. Utilisé dans Brio et Dungeon.">SQL</li>
+            <li tabindex="0" data-def="Structure (HTML) et apparence (CSS) des pages web, comme ce portfolio.">HTML / CSS</li>
+          </ul>
+        </article>
+        <article class="carte connaissance reveal">
+          <h3>Moteurs et cadriciels</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Moteur de jeu professionnel. Tilemaps, URP, Input System, ScriptableObjects, animations.">Unity</li>
+            <li tabindex="0" data-def="Outil de Microsoft pour créer des applications Windows, détourné pour faire un jeu dans Dungeon.">Windows Forms (.NET)</li>
+            <li tabindex="0" data-def="Bibliothèque Python qui simplifie la création de jeux 2D. Utilisée pour Apocalypse.">Pygame Zero</li>
+            <li tabindex="0" data-def="Boîte à outils de Steam pour ajouter succès et sauvegardes en ligne. En apprentissage dans Shattered Realms.">Steamworks SDK</li>
+          </ul>
+        </article>
+        <article class="carte connaissance reveal">
+          <h3>Données</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Système de base de données relationnelle, utilisé dans Brio et Dungeon.">MySQL</li>
+            <li tabindex="0" data-def="Conception de tables liées entre elles, sans doublons d'information.">Bases de données relationnelles</li>
+            <li tabindex="0" data-def="Create, Read, Update, Delete : les quatre opérations de base sur des données.">CRUD</li>
+            <li tabindex="0" data-def="Fichier texte en forme de tableau, utilisé pour l'historique des parties d'Apocalypse.">Fichiers CSV</li>
+          </ul>
+        </article>
+        <article class="carte connaissance reveal">
+          <h3>Techniques de jeu vidéo</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Algorithme qui trouve le chemin le plus court en évitant les obstacles, comme un GPS.">Pathfinding A*</li>
+            <li tabindex="0" data-def="Organisation d'un comportement en états (patrouiller, attaquer, fuir) pour l'IA des ennemis.">Machines à états finis</li>
+            <li tabindex="0" data-def="Création automatique de contenu (cartes, biomes) par des algorithmes plutôt qu'à la main.">Génération procédurale</li>
+            <li tabindex="0" data-def="Cycle répété plusieurs fois par seconde : lire les touches, mettre à jour, redessiner.">Boucle de jeu</li>
+            <li tabindex="0" data-def="Détection du moment où deux objets se touchent.">Collisions</li>
+            <li tabindex="0" data-def="Optimisations de l'affichage : Sprite Atlas, tri de profondeur, caméra au pixel près.">Rendu 2D pixel art</li>
+          </ul>
+        </article>
+        <article class="carte connaissance reveal">
+          <h3>Conception logicielle</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Programmer avec des objets : classes, héritage, polymorphisme, encapsulation, abstraction.">Programmation orientée objet</li>
+            <li tabindex="0" data-def="Modèle-Vue-Contrôleur : séparer données, affichage et logique.">Architecture MVC</li>
+            <li tabindex="0" data-def="Schéma qui montre les classes d'un programme et leurs liens, avant ou après le codage.">Diagrammes de classes UML</li>
+            <li tabindex="0" data-def="Petits programmes qui vérifient automatiquement que le code fonctionne.">Tests unitaires et intégrés</li>
+            <li tabindex="0" data-def="Sessions, hachage des mots de passe, double facteur et gestion des rôles.">Sécurité web</li>
+          </ul>
+        </article>
+        <article class="carte connaissance reveal">
+          <h3>Outils</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Environnement de développement complet pour C# et .NET.">Visual Studio</li>
+            <li tabindex="0" data-def="Éditeur de code léger, utilisé pour le web et Python.">Visual Studio Code</li>
+            <li tabindex="0" data-def="Logiciel qui garde l'historique du code et permet de travailler à plusieurs.">Git</li>
+            <li tabindex="0" data-def="Plateformes en ligne pour héberger le code et collaborer.">GitHub / GitLab</li>
+            <li tabindex="0" data-def="Tableau blanc en ligne utilisé pour planifier Vassal (scénarios, idées visuelles).">Miro</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SCOLARITÉ ============ -->
+    <section class="section" id="scolarite">
+      <header class="section-titre reveal">
+        <p class="surtitre">Parcours scolaire</p>
+        <h2>Scolarité</h2>
+      </header>
+      <ol class="frise">
+        <li class="frise-item reveal">
+          <span class="frise-point" aria-hidden="true"></span>
+          <div class="carte">
+            <p class="frise-date">2027 – 2030 <span class="badge badge-ciel">Prévu</span></p>
+            <h3>Baccalauréat en création de jeux vidéo, profil design</h3>
+            <p class="frise-lieu">Université du Québec en Abitibi-Témiscamingue (UQAT) · Montréal</p>
+            <p>La suite logique de mon parcours : approfondir la conception de jeux (game design) pour en faire mon métier.</p>
+          </div>
+        </li>
+        <li class="frise-item reveal">
+          <span class="frise-point" aria-hidden="true"></span>
+          <div class="carte">
+            <p class="frise-date">2024 – 2027 <span class="badge badge-or">En cours</span></p>
+            <h3>DEC en Techniques de l'informatique</h3>
+            <p class="frise-lieu">Cégep de l'Abitibi-Témiscamingue · Rouyn-Noranda</p>
+            <p>Programmation orientée objet, développement web, bases de données, développement de jeux vidéo avec Unity, architecture d'applications et veille technologique. Fin prévue à la session d'hiver 2027.</p>
+          </div>
+        </li>
+        <li class="frise-item reveal">
+          <span class="frise-point" aria-hidden="true"></span>
+          <div class="carte">
+            <p class="frise-date">2024 <span class="badge">Obtenu</span></p>
+            <h3>Diplôme d'études secondaires (DES)</h3>
+            <p class="frise-lieu">Cité étudiante Polyno</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ FORMATIONS ============ -->
+    <section class="section" id="formations">
+      <header class="section-titre reveal">
+        <p class="surtitre">En dehors du parcours scolaire</p>
+        <h2>Formations et expérience</h2>
+      </header>
+      <div class="grille-formations">
+        <article class="carte formation reveal">
+          <p class="frise-date">Emploi actuel</p>
+          <h3>Assistant technique en pharmacie</h3>
+          <p>Emploi en pharmacie, en parallèle de mes études.</p>
+          <h4>Formations suivies en milieu de travail</h4>
+          <p>J'ai complété la majorité des formations offertes pour mon poste.</p>
+        </article>
+        <article class="carte formation reveal">
+          <p class="frise-date">Projets personnels</p>
+          <h3>Apprentissage autodidacte</h3>
+          <p>Au-delà des cours, je poursuis mon apprentissage par moi-même : documentation officielle de Unity et de Steamworks, nouvelles versions du moteur (Unity 6, URP) et publication de mes jeux sur itch.io.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <header class="section-titre reveal">
+        <p class="surtitre">Écrivez-moi</p>
+        <h2>Contact</h2>
+        <p class="section-intro">Une question, une offre de stage ou simplement envie de parler de jeux vidéo ? N'hésitez pas à me joindre.</p>
+      </header>
+      <div class="contact reveal">
+        <div class="carte contact-infos">
+          <h3>Me joindre directement</h3>
+          <p class="contact-courriel">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg>
+            <a href="mailto:xaviertrud2006@gmail.com">xaviertrud2006@gmail.com</a>
+          </p>
+          <button class="btn btn-ligne btn-petit" id="copier-courriel" type="button">Copier l'adresse</button>
+          <p class="contact-statut" id="copie-statut" role="status"></p>
+          <h3>Ailleurs sur le web</h3>
+          <ul class="contact-liens">
+            <li><a href="https://github.com/Chose-01" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-github"/></svg>github.com/Chose-01</a></li>
+            <li><a href="https://chose-01.itch.io/vassal" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-jeu"/></svg>chose-01.itch.io</a></li>
+          </ul>
+        </div>
+        <form class="carte contact-form" id="form-contact" novalidate>
+          <h3>Me contacter</h3>
+          <div class="champ">
+            <label for="nom">Votre nom</label>
+            <input id="nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="champ">
+            <label for="courriel">Votre courriel</label>
+            <input id="courriel" name="courriel" type="email" autocomplete="email" required>
+          </div>
+          <div class="champ">
+            <label for="sujet">Sujet</label>
+            <input id="sujet" name="sujet" type="text" required>
+          </div>
+          <div class="champ">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <p class="form-erreur" id="form-erreur" role="alert"></p>
+          <button class="btn btn-or" type="submit">Envoyer le message</button>
+          <p class="form-note">L'envoi ouvre votre application de courriel avec le message déjà rempli.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>© <span id="annee">2026</span> Xavier Trudel · Portfolio réalisé en HTML, CSS et JavaScript, hébergé sur GitHub Pages.</p>
+    <a href="#accueil" class="retour-haut">Retour en haut ↑</a>
+  </footer>
+
+  <!-- Icônes SVG -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-jeu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6 9v4M4 11h4M15 10h.01M18 12h.01M7.5 6h9A5.5 5.5 0 0 1 22 11.5v1A4.5 4.5 0 0 1 14 15.3l-.6-.8h-2.8l-.6.8A4.5 4.5 0 0 1 2 12.5v-1A5.5 5.5 0 0 1 7.5 6Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+    <symbol id="i-etoile" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="m12 3 2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6-4.5-4.2 6.1-.7z"/></symbol>
+    <symbol id="i-equipe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-6 9c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.4c1.8.9 3 2.9 3 5.6"/></symbol>
+    <symbol id="i-calendrier" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4M8 14h3M8 17h6"/></symbol>
+    <symbol id="i-ampoule" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></symbol>
+    <symbol id="i-bouclier" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M12 3 4.5 6v5.5c0 4.5 3.2 8.3 7.5 9.5 4.3-1.2 7.5-5 7.5-9.5V6zM9 12l2 2 4-4"/></symbol>
+    <symbol id="i-bulle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M4 5h16v11H9l-5 4zM8 9h8M8 12h5"/></symbol>
+    <symbol id="i-livre" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5Zm0 0v13"/></symbol>
+    <symbol id="i-aile" viewBox="0 0 200 260"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M190 30C120 20 40 50 12 140c40-30 90-40 140-35"/><path d="M188 60C130 60 70 90 40 170c35-25 75-35 115-30"/><path d="M186 92C140 98 95 125 72 196c28-20 60-28 92-24"/><path d="M184 124c-35 8-66 32-82 88 22-15 46-21 70-18"/><path d="M182 156c-24 8-44 26-54 64 15-10 31-14 48-12"/></g></symbol>
+  </svg>
+
+  <script src="js/projets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

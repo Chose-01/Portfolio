@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisation · Xavier Trudel</title>
+  <meta name="description" content="Description détaillée d'une réalisation du portfolio de Xavier Trudel.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-projet">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="ciel" aria-hidden="true"><span class="halo halo-1"></span><span class="halo halo-2"></span><span class="halo halo-3"></span></div>
+  <div class="particules" aria-hidden="true"></div>
+
+  <header class="entete" id="entete">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="logo" href="index.html" aria-label="Retour à l'accueil">
+        <span class="logo-halo" aria-hidden="true"></span><span>Xavier Trudel</span>
+      </a>
+      <button class="nav-bouton" aria-expanded="false" aria-controls="nav-liens" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-liens" id="nav-liens">
+        <li><a href="index.html#presentation">Présentation</a></li>
+        <li><a href="index.html#realisations" aria-current="page">Réalisations</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="index.html#connaissances">Connaissances</a></li>
+        <li><a href="index.html#scolarite">Scolarité</a></li>
+        <li><a href="index.html#formations">Formations</a></li>
+        <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu" class="projet-detail">
+    <noscript><p class="section">Cette page a besoin de JavaScript pour afficher le projet. <a href="index.html#realisations">Retour aux réalisations</a></p></noscript>
+  </main>
+
+  <footer class="pied">
+    <p>© <span id="annee">2026</span> Xavier Trudel · Portfolio réalisé en HTML, CSS et JavaScript, hébergé sur GitHub Pages.</p>
+    <a href="#entete" class="retour-haut">Retour en haut ↑</a>
+  </footer>
+
+  <div class="visionneuse" id="visionneuse" role="dialog" aria-modal="true" aria-label="Image agrandie" hidden>
+    <button class="visionneuse-fermer" type="button" aria-label="Fermer">×</button>
+    <button class="visionneuse-nav prec" type="button" aria-label="Image précédente">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="visionneuse-nav suiv" type="button" aria-label="Image suivante">›</button>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.880-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.290 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-jeu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6 9v4M4 11h4M15 10h.01M18 12h.01M7.5 6h9A5.5 5.5 0 0 1 22 11.5v1A4.5 4.5 0 0 1 14 15.3l-.6-.8h-2.8l-.6.8A4.5 4.5 0 0 1 2 12.5v-1A5.5 5.5 0 0 1 7.5 6Z"/></symbol>
+    <symbol id="i-lien" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  </svg>
+
+  <script src="js/projets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
