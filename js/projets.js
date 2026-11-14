@@ -47,9 +47,7 @@ const PROJETS = [
     videos: [
       { src: "assets/video/shattered.mp4", poster: "assets/img/shattered/monde.jpg", legende: "Extrait actuel du développement" }
     ],
-    liens: [
-      { label: "Code source (GitHub)", url: "https://github.com/Chose-01/Shattered-Realms", icone: "github" }
-    ]
+    liens: []
   },
 
   {
@@ -92,8 +90,7 @@ const PROJETS = [
       { src: "assets/video/vassal.mp4", poster: "assets/img/vassal/combat.jpg", legende: "Extrait de gameplay" }
     ],
     liens: [
-      { label: "Jouer sur itch.io", url: "https://chose-01.itch.io/vassal", icone: "jeu" },
-      { label: "Code source (GitHub)", url: "https://github.com/Chose-01/Vassal", icone: "github" }
+      { label: "Jouer sur itch.io", url: "https://chose-01.itch.io/vassal", icone: "jeu" }
     ]
   },
 
@@ -136,9 +133,7 @@ const PROJETS = [
       { src: "assets/img/brio/ajout-employe.jpg", alt: "Message de confirmation : employé ajouté avec succès", legende: "Confirmation après l'ajout d'un employé" }
     ],
     videos: [],
-    liens: [
-      { label: "Code source (GitHub)", url: "https://github.com/Chose-01/Brio_Microbrasserie", icone: "github" }
-    ]
+    liens: []
   },
 
   {
@@ -176,9 +171,7 @@ const PROJETS = [
     videos: [
       { src: "assets/video/dungeon.mp4", poster: "assets/img/dungeon/jeu.jpg", legende: "Démonstration du gameplay" }
     ],
-    liens: [
-      { label: "Code source (GitHub)", url: "https://github.com/Chose-01/Dungeon", icone: "github" }
-    ]
+    liens: []
   },
 
   {
@@ -216,8 +209,6 @@ const PROJETS = [
       { src: "assets/video/apocalypse-1.mp4", poster: "assets/img/apocalypse/arene.jpg", legende: "Démonstration des mécaniques" },
       { src: "assets/video/apocalypse-2.mp4", poster: "assets/img/apocalypse/vagues.jpg", legende: "Système de survie et de vagues" }
     ],
-    liens: [
-      { label: "Code source (GitHub)", url: "https://github.com/Chose-01/Apocalypse", icone: "github" }
-    ]
+    liens: []
   }
 ];

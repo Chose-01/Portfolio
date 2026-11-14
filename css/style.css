@@ -140,7 +140,7 @@ p { margin: 0 0 1em; }
 @keyframes tourner { to { transform: rotate(360deg); } }
 .aile { position: absolute; width: 46%; top: 22%; color: var(--or-clair); opacity: .9; }
 .aile-g { right: 58%; animation: battre 6s ease-in-out infinite; transform-origin: right center; }
-.aile-d { left: 58%; transform: scaleX(-1); animation: battre-d 6s ease-in-out infinite; transform-origin: left center; }
+.aile-d { left: 58%; transform: scaleX(-1); animation: battre-d 6s ease-in-out infinite; transform-origin: center center; }
 @keyframes battre { 50% { transform: rotate(-5deg) translateY(-6px); } }
 @keyframes battre-d { 0%, 100% { transform: scaleX(-1); } 50% { transform: scaleX(-1) rotate(-5deg) translateY(-6px); } }
 .aureole-centre { width: 40%; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
