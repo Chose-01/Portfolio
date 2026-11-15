@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
   <script>try{if(localStorage.getItem("theme")==="sombre")document.documentElement.dataset.theme="sombre";}catch(e){}</script>
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -153,13 +153,19 @@
           <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-bouclier"/></svg>
           <h3>Rigueur et souci du détail</h3>
           <p>Je travaille avec précision et je respecte les procédures, surtout quand une erreur peut avoir des conséquences.</p>
-          <p class="exemple"><strong>Exemple :</strong> comme assistant technique en pharmacie, chaque tâche demande exactitude et confidentialité ; en programmation, cela se traduit par la sécurité de <a href="projet.html?id=brio-microbrasserie">Brio</a> (2FA, rôles, hachage).</p>
+          <p class="exemple"><strong>Exemple :</strong> chez Jean Coutu, je saisis et prépare des prescriptions et des préparations magistrales qui exigent une exactitude absolue ; en programmation, cela se traduit par la sécurité de <a href="projet.html?id=brio-microbrasserie">Brio</a> (2FA, rôles, hachage).</p>
+        </article>
+        <article class="carte competence reveal">
+          <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-etoile"/></svg>
+          <h3>Leadership et sens des responsabilités</h3>
+          <p>Je sais prendre les devants, organiser le travail et assurer le bon déroulement des opérations quand on me confie une responsabilité.</p>
+          <p class="exemple"><strong>Exemple :</strong> je suis régulièrement responsable du laboratoire la fin de semaine à la pharmacie Jean Coutu, où je coordonne la préparation des ordonnances et les commandes.</p>
         </article>
         <article class="carte competence reveal">
           <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-bulle"/></svg>
           <h3>Communication et service à la clientèle</h3>
           <p>J'explique clairement, j'écoute les besoins et je reste courtois, même dans les moments occupés.</p>
-          <p class="exemple"><strong>Exemple :</strong> mon emploi en pharmacie me met chaque jour en contact avec la clientèle et une équipe de professionnels de la santé.</p>
+          <p class="exemple"><strong>Exemple :</strong> mon emploi en pharmacie me met chaque jour en contact avec les patients, les pharmaciens et le reste de l'équipe du laboratoire.</p>
         </article>
         <article class="carte competence reveal">
           <svg class="icone" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-livre"/></svg>
@@ -237,6 +243,15 @@
             <li tabindex="0" data-def="Tableau blanc en ligne utilisé pour planifier Vassal (scénarios, idées visuelles).">Miro</li>
           </ul>
         </article>
+        <article class="carte connaissance reveal">
+          <h3>Systèmes et outils en pharmacie</h3>
+          <ul class="pastilles">
+            <li tabindex="0" data-def="Logiciel de laboratoire Jean Coutu utilisé pour saisir les ordonnances et gérer les dossiers des patients.">Logiciel PJC</li>
+            <li tabindex="0" data-def="Robots automatisés qui comptent et distribuent les comprimés à haute vitesse : entretien, remplissage et gestion.">Robots Parata</li>
+            <li tabindex="0" data-def="Plateformes logicielles utilisées pour passer et recevoir les commandes de médicaments et gérer les stocks du laboratoire.">PharmaPlus / McKesson / EJM</li>
+            <li tabindex="0" data-def="Préparation sur mesure de médicaments (crèmes, mélanges, solutions) selon des protocoles de dosage stricts.">Préparations magistrales</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -284,16 +299,27 @@
       </header>
       <div class="grille-formations">
         <article class="carte formation reveal">
-          <p class="frise-date">Emploi actuel</p>
+          <p class="frise-date">Emploi actuel · Jean Coutu (PJC) <span class="badge badge-or">Responsable fin de semaine</span></p>
           <h3>Assistant technique en pharmacie</h3>
-          <p>Emploi en pharmacie, en parallèle de mes études.</p>
+          <p>En parallèle de mes études, je travaille au laboratoire d'une pharmacie Jean Coutu, où j'occupe aussi le rôle de <strong>responsable du laboratoire la fin de semaine</strong> de temps en temps.</p>
+          <h4>Tâches et responsabilités au laboratoire</h4>
+          <ul>
+            <li>Saisie informatique et préparation complète des prescriptions (ordonnances).</li>
+            <li>Réalisation de <strong>préparations magistrales</strong> (mélanges et préparations sur mesure).</li>
+            <li>Utilisation et gestion des robots <strong>Parata</strong> (systèmes automatisés pour compter les comprimés).</li>
+            <li>Gestion des commandes et de l'inventaire du laboratoire.</li>
+          </ul>
           <h4>Formations suivies en milieu de travail</h4>
-          <p>J'ai complété la majorité des formations offertes pour mon poste.</p>
+          <ul>
+            <li>Formation de technicien en pharmacie <strong>PJC (Jean Coutu)</strong> (majorité des formations disponibles complétées, à l'exception de la DVCC).</li>
+            <li>Formation sur les robots de comptage automatisé <strong>Parata</strong>.</li>
+            <li>Formation sur les logiciels de commandes du laboratoire (<strong>logiciel PJC</strong>, <strong>PharmaPlus</strong>, <strong>McKesson</strong>, <strong>EJM</strong>, etc.).</li>
+          </ul>
         </article>
         <article class="carte formation reveal">
           <p class="frise-date">Projets personnels</p>
-          <h3>Apprentissage autodidacte</h3>
-          <p>Au-delà des cours, je poursuis mon apprentissage par moi-même : documentation officielle de Unity et de Steamworks, nouvelles versions du moteur (Unity 6, URP) et publication de mes jeux sur itch.io.</p>
+          <h3>Apprentissage autodidacte en jeu vidéo</h3>
+          <p>Au-delà des cours, je poursuis mon apprentissage par moi-même : documentation officielle de Unity et de Steamworks, nouvelles versions du moteur (Unity 6, URP), architecture de systèmes de jeu et publication sur itch.io et Steam.</p>
         </article>
       </div>
     </section>
