@@ -49,7 +49,7 @@ const PROJETS = [
       { src: "assets/img/shattered/editeur-unity.jpg", alt: "Interface complète de l'éditeur Unity avec la scène MapMonde", legende: "Le projet dans l'éditeur Unity 6 (scène MapMonde et ses Tilemaps)" }
     ],
     videos: [
-      { src: "assets/video/shattered.mp4", poster: "assets/img/shattered/monde.jpg", legende: "Extrait actuel du développement" }
+      { src: "assets/video/shattered.mp4?v=2", poster: "assets/img/shattered/monde.jpg", legende: "Extrait actuel du développement" }
     ],
     liens: []
   },
