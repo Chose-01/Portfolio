@@ -41,6 +41,10 @@ const PROJETS = [
     apprentissages: "Jusqu'à maintenant, ce projet m'a appris à penser à la performance dès le départ : on ne charge que ce qui entoure le joueur. J'ai aussi appris à séparer les données du code avec les ScriptableObjects, ce qui rend le jeu beaucoup plus facile à agrandir. Enfin, la partie veille m'a fait découvrir le côté « entreprise » du jeu vidéo : frais de publication, vérification d'identité et obligations fiscales.",
     galerie: [
       { src: "assets/img/shattered/monde.jpg", alt: "Personnage dans une forêt en pixel art à la frontière d'un biome enneigé", legende: "Exploration du monde : transition entre forêt et biome enneigé" },
+      { src: "assets/img/shattered/exploration-neige.jpg", alt: "Exploration d'un biome enneigé avec mini-carte du monde, PNJ et interface complète", legende: "Biome enneigé : mini-carte, PNJ et interface de jeu" },
+      { src: "assets/img/shattered/exploration-foret.jpg", alt: "Forêt en pixel art près d'un château avec transition vers la neige et bande de bandits", legende: "Forêt et château avec bande de bandits et mini-carte" },
+      { src: "assets/img/shattered/menu-chateau.jpg", alt: "Menu du château de Stoneshore avec recrutement, taverne, arène, marché et forgeron", legende: "Menu de château : gestion, recrutement, arène et forgeron" },
+      { src: "assets/img/shattered/bataille-deploiement.jpg", alt: "Phase de déploiement de bataille avec formations d'unités et ordres tactiques", legende: "Phase de déploiement et formations de bataille" },
       { src: "assets/img/shattered/generation-carte.jpg", alt: "Vue de l'éditeur Unity montrant un continent de forêt et un océan générés", legende: "Carte générée automatiquement (forêt dense, côte et océan)" },
       { src: "assets/img/shattered/editeur-unity.jpg", alt: "Interface complète de l'éditeur Unity avec la scène MapMonde", legende: "Le projet dans l'éditeur Unity 6 (scène MapMonde et ses Tilemaps)" }
     ],
