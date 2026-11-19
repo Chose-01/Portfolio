@@ -46,7 +46,7 @@ h3 { font-size: 1.45rem; }
 h4 { font-family: var(--sans); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--or); margin-top: 1.2em; }
 p { margin: 0 0 1em; }
 
-.skip-link { position: absolute; left: -999px; top: 8px; background: var(--encre); color: #fff; padding: .6em 1em; border-radius: 8px; z-index: 100; }
+.skip-link { position: absolute; left: -999px; top: 8px; background: var(--encre); color: #12141d; padding: .6em 1em; border-radius: 8px; z-index: 100; }
 .skip-link:focus { left: 8px; }
 
 /* ---------- Ciel : halos ---------- */
