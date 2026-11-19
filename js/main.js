@@ -68,19 +68,6 @@
       }));
   }
 
-  /* ---------- Particules lumineuses ---------- */
-  const particules = $(".particules");
-  if (particules && !reduitMouvement) {
-    for (let i = 0; i < 34; i++) {
-      const p = document.createElement("span");
-      const taille = 4 + Math.random() * 5.5;
-      p.style.cssText = `left:${Math.random() * 100}%;width:${taille}px;height:${taille}px;` +
-        `animation-duration:${14 + Math.random() * 18}s;animation-delay:${-Math.random() * 30}s;` +
-        `opacity:${0.65 + Math.random() * 0.35}`;
-      particules.appendChild(p);
-    }
-  }
-
   /* ---------- Apparition au défilement ---------- */
   const observerReveal = () => {
     const elements = $$(".reveal:not(.visible)");
