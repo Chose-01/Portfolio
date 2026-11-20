@@ -173,6 +173,7 @@ const PROJETS = [
       { src: "assets/img/dungeon/selection-personnage.jpg", alt: "Fenêtre de sélection de personnage à côté de la partie en cours", legende: "Sélection du personnage (nom et classe) et partie en cours" }
     ],
     videos: [
+      { src: "assets/video/Extrait_dungeon_2.mp4", poster: "assets/img/dungeon/jeu.jpg", legende: "Démonstration du gameplay" },
       { src: "assets/video/dungeon.mp4", poster: "assets/img/dungeon/jeu.jpg", legende: "Démonstration du gameplay" }
     ],
     liens: []
